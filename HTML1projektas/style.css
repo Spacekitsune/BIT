@@ -159,10 +159,10 @@ a>span {
 /*--------------MEDIA QUERIES--------------*/
 
 /* Large desktop */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {  }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) {  }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -185,6 +185,54 @@ a>span {
         background: none;
         color: red;
     }
+
+    .new-entry {
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+    }
+
+    .calendar, .new-entry-text {
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+    .calendar {
+        width: 95%;
+        justify-content: left;
+        border-right: none;
+        border-bottom: 1px solid darkslategrey;
+    }
+
+    .calendar-container {
+        width: 30%;
+        flex-direction: row;
+        border-radius: 0;
+
+    }
+
+    .calendar-head, .calendar-footer {
+        height: 100%;
+        width: 25%;
+        border-radius: 0;
+    }
+
+    .calendar-head {
+        background: red;
+    }
+
+    .calendar-footer {
+
+        background: darkslategrey;
+    }
+
+    .calendar-body {
+        height: 100%;
+        width: 40%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
 }
 
 /* Landscape phones and down */
