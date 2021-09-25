@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto" ,sans-serif;
+}
+
+h2>span {
+    color: darkcyan;
+}
+
+p {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+a {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+a>span {
+    color: gray;
+}
+/*--------------NEWS ENTRY--------------*/
+
+.new-entry {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    border-bottom: 1px solid darkslategrey;
+}
+
+.calendar, .new-entry-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    width: 20%;
+    border-right: darkslategrey 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 80%;
+    background: white;
+}
+
+.calendar-head, .calendar-footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar-head {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: red;
+}
+
+.calendar-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: darkslategrey;
+}
+
+.calendar-body {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.new-entry-text {
+    width: 60%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.entry-link-list>a {
+    padding: 0 5px;
+}
+.entry-link-list>a:not(:last-child) {
+    border-right: 1px darkslategrey solid;
+}

@@ -1,0 +1,110 @@
+/*MAIN DESIGN*/
+:root {
+    --main-bg-color: #05445e;
+    --main-primary: #eee;
+    --main-secondary: #75e6da;
+    --main-complimentary: #189ab4;
+}
+
+html {
+    scroll-padding-top: 140px; /* height of sticky header */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--main-bg-color);
+    font-family: "Gill Sans MT";
+    color: #393D47;
+    font-size: 12pt;
+}
+/*HEADER*/
+
+header {
+    width: 100%;
+    padding: 5px;
+    background: var(--main-primary);
+    border-bottom: 2px solid var(--main-complimentary);
+    margin-bottom: 50px;
+    position: fixed;
+    text-align: center;
+}
+
+header>h1>a {
+    font-size: 30pt;
+    color: var(--main-complimentary);
+    text-decoration: none;
+}
+
+header>a{
+    color: #436c6d ;
+    font-size: 16pt;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+header>a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+main {
+    padding-top: 125px;
+    margin: auto;
+    width: 80vw;
+}
+
+main>div {
+    background: var(--main-primary);
+    border-radius: 5px;
+    padding-bottom: 25px;
+}
+
+main>div>h2:first-child {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--main-secondary);
+    border-bottom: 5px solid var(--main-complimentary);
+    padding: 10px 0px 10px 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.info {
+    margin: 25px;
+}
+
+/*TABLE PART STYLE*/
+table {
+    border-collapse: collapse;
+    width: 30vw;
+    height: 40vh;
+    font-family: Tahoma;
+    text-align: center;
+    font-size: 14px;
+    margin: 50px 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+tbody>tr:nth-child(odd) {
+    background: beige;
+}
+
+tbody>tr:nth-child(even) {
+    background: seashell;
+}
+
+thead {
+    font-sizet: 16px ;
+}
+
+thead, tfoot {
+    font-weight: bold;
+    background: salmon;
+}
