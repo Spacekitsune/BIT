@@ -101,6 +101,7 @@ a>span {
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+    min-width: 100px;
     height: 80%;
     background: white;
     border: darkslategrey 1px solid;
