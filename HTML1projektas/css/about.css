@@ -1,0 +1,109 @@
+.grid-container {
+    height: 80vh;
+    min-height: 550px;
+    width: 70vw;
+    min-width: 550px;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+}
+
+.grid-item1{grid-area: 1/1/span 2/span 2;}
+.grid-item2{grid-area: 1/3/2/4;}
+.grid-item3{grid-area: 1/4/2/5;}
+.grid-item4{grid-area: 2/3/3/4;}
+.grid-item5{grid-area: 2/4/3/5;}
+.grid-item6{grid-area: 3/1/4/2;}
+.grid-item7{grid-area: 3/2/5/3;}
+.grid-item8{grid-area: 3/3/span 2/ span 2;}
+.grid-item9{grid-area: 4/1/5/2;}
+
+.grid-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quote {
+    font-style: italic;
+    color: darkslategrey;
+    font-size: 3em;
+    text-align: center;
+}
+
+.photo  {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid darkslategrey;
+    background: no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.photo:hover {
+    border: red 2px solid;
+}
+
+#large-photo {
+    height: 200px;
+    width: 200px;
+}
+
+#large-photo:hover {
+    border: 1px solid darkslategrey;
+}
+
+.photo1 {background-image: url("../img/about/profile1.PNG");}
+.photo2 {background-image: url("../img/about/profile2.PNG");}
+.photo3 {background-image: url("../img/about/profile3.PNG");}
+.photo4 {background-image: url("../img/about/profile4.PNG");}
+.photo5 {background-image: url("../img/about/profile5.PNG");}
+.photo6 {background-image: url("../img/about/profile6.PNG");}
+
+.box2 {
+    width: 400px;
+    height: 150px;
+    max-height: 200px;
+    margin: 50px auto;
+    border: 4px solid darkslategrey;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    font-weight: normal;
+    color: white;
+    background: darkslategrey;
+    font-family: arial;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* speech bubble 11 */
+
+.sb11:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid darkslategrey;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -23px;
+}
+
+.sb11:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -17px;
+}
+
+
