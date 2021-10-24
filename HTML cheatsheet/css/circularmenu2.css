@@ -1,0 +1,242 @@
+/*MAIN THINGS*/
+
+body {
+    background: none;
+    font-family: Tahoma;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+/*STICKY NOTE*/
+
+.sticky-note {
+    height: 250px;
+    width: 250px;
+    box-sizing: border-box;
+    background:hsla(67, 95%, 95%, 1);
+    /*border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;*/
+    /*border:solid 5px hsla(0, 95%, 35%, 1);*/
+    border-radius: 255px 255px 15px 225px/15px 15px 225px 15px;
+    border-right: solid 5px hsl(34, 31%, 51%);
+    border-bottom: solid 5px hsl(34, 31%, 51%);
+    position: fixed;
+    left: 1000px;
+    top: 50px;
+}
+
+.sticky-note div {
+    width: 100%;
+    height: 40px;
+    background: burlywood;
+}
+
+.sticky-note p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+/*CIRCULAR MENU*/
+
+nav {
+    width: 250px;
+    height: 250px;
+    /*line-height: 150px;*/
+    border-radius: 50%;
+    border: darkgray solid 2px;
+    box-shadow: 7px 8px 5px 1px rgba(221,221,221,0.65);
+    margin: 190px auto;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.75em;
+    font-weight: bold;
+    color: hotpink;
+    transition: 0.24s 0.2s;
+    background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipartandscrap.com%2Fwp-content%2Fuploads%2F2017%2F06%2FArt-teamwork-clip-team-people-art-clipart-3.jpg&f=1&nofb=1") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+
+
+}
+
+nav .menu {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    /*top: -50px;*/
+    /*left: -125px;*/
+    border: 1px solid transparent;
+    cursor: default;
+    border-radius: 50%;
+    /*transform: scale(0);*/
+    /*transition: transform 1.4s 0.07s;*/
+    /*z-index: -1;*/
+}
+
+/*nav:hover .menu{*/
+/*    transition: transform 0.4s 0.08s, z-index 0s 0.5s;*/
+/*    transform: scale(1.25);*/
+/*    z-index: 1;*/
+/*}*/
+
+nav .menu li {
+    position: absolute;
+    top: -75px;
+    /*left: -70px;*/
+    /*transform-origin: 150px 150px;*/
+    /*transition: all 0.5s 0.1s;*/
+}
+
+/*nav:hover .menu li{*/
+/*    transition: all 0.7s;*/
+/*}*/
+
+nav .menu li a{
+    width: 75px;
+    height: 75px;
+    line-height: 45px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    font-size: 59%;
+    color: hotpink;
+    transition: 0.7s;
+    text-decoration: none;
+    border: darkgray 1px solid;
+}
+
+nav .menu li:nth-child(2) {
+    top: -85px;
+    left: 100px;
+}
+
+nav .menu li:nth-child(3) {
+    top: -75px;
+    left: 195px;
+}
+
+nav .menu li:nth-child(4) {
+    top: -85px;
+    left: 0px;
+}
+
+nav .menu li:nth-child(5) {
+    top: -85px;
+    left: 0px;
+}
+
+nav .menu li:nth-child(6) {
+    top: -85px;
+    left: 0px;
+}
+
+/*nav:hover .menu li:nth-child(1){*/
+/*    transition-delay: 0.02s;*/
+/*    transform: rotate(85deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(1) a{*/
+/*    transition-delay: 0.04s;*/
+/*    transform: rotate(635deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(2){*/
+/*    transition-delay: 0.04s;*/
+/*    transform: rotate(125deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(2) a{*/
+/*    transition-delay: 0.08s;*/
+/*    transform: rotate(605deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(3){*/
+/*    transition-delay: 0.06s;*/
+/*    transform: rotate(165deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(3) a{*/
+/*    transition-delay: 0.12s;*/
+/*    transform: rotate(575deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(4){*/
+/*    transition-delay: 0.08s;*/
+/*    transform: rotate(205deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(4) a{*/
+/*    transition-delay: 0.16s;*/
+/*    transform: rotate(545deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(5){*/
+/*    transition-delay: 0.1s;*/
+/*    transform: rotate(245deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(5) a{*/
+/*    transition-delay: 0.2s;*/
+/*    transform: rotate(515deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(6){*/
+/*    transition-delay: 0.12s;*/
+/*    transform: rotate(285deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(6) a{*/
+/*    transition-delay: 0.24s;*/
+/*    transform: rotate(445deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(7){*/
+/*    transition-delay: 0.14s;*/
+/*    transform: rotate(325deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(7) a{*/
+/*    transition-delay: 0.28s;*/
+/*    transform: rotate(365deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(8){*/
+/*    transition-delay: 0.16s;*/
+/*    transform: rotate(365deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(8) a{*/
+/*    transition-delay: 0.32s;*/
+/*    transform: rotate(335deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(9){*/
+/*    transition-delay: 0.18s;*/
+/*    transform: rotate(405deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(9) a{*/
+/*    transition-delay: 0.36s;*/
+/*    transform: rotate(305deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(10){*/
+/*    transition-delay: 0.2s;*/
+/*    transform: rotate(445deg);*/
+/*}*/
+
+/*nav:hover .menu li:nth-child(10) a{*/
+/*    transition-delay: 0.4s;*/
+/*    transform: rotate(275deg);*/
+/*}*/
+
+
+
+
+
