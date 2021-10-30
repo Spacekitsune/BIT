@@ -14,10 +14,10 @@
         <div class="for-mobile">
             <h1>&#47;Workspaces&#47;</h1>
             <p class="menu">Menu
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="changeDisplay()"></i>
             </p>
         </div>
-        <ul>
+        <ul id="menu">
             <li>News</li>
             <li>About us</li>
             <li>Products</li>
@@ -72,5 +72,11 @@
     <footer>
         &copy; Aleksandra C. 22 gr. PHP
     </footer>
+    <script>
+        function changeDisplay() {
+            let changeDisplay = document.getElementById('menu');
+            changeDisplay.style.display='block';
+        }
+    </script>
 </body>
 </html>

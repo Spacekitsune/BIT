@@ -35,6 +35,7 @@ h1 {
 }
 
 ul {
+    display: none;
     color: white;
     background: #B08464;
     font-family: 'Roboto', sans-serif;
