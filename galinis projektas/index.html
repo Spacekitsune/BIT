@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Title here</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <title>Scandinavian Workspaces</title>
     </head>
 <body>
     <header>
         <div class="for-mobile">
-            <h1>&#47;Workspaces&#47;</h1>
+            <a href="index.html">
+                <h1>&#47;Workspaces&#47;</h1>
+            </a>
             <p class="menu">Menu
                 <i class="fas fa-bars" onclick="changeDisplay()"></i>
             </p>
         </div>
         <ul id="menu">
-            <li>News</li>
-            <li>About us</li>
-            <li>Products</li>
-            <li>Contact Us</li>
+            <li><a href="html/news.html">News</a></li>
+            <li><a href="html/about.html">About us</a></li>
+            <li><a href="html/products.html">Products</a></li>
+            <li><a href="html/contact.php">Contact Us</a></li>
         </ul>
         <div class="logo-picture">
             <img src="img/img1.jpg" alt="workspace"/>
@@ -37,7 +38,7 @@
                 these examples from across the world have white space in mind.
                 Think light, think airy, think IKEA. Think pops of colour that add focal points to clean spaces.
             </p>
-            <button>Check out our workspaces</button>
+            <a class="button" href="html/about.html">Check out our workspaces</a>
         </article>
         <section>
             <div class="product-item">
@@ -47,7 +48,7 @@
                     <p>0 EUR</p>
                 </div>
                 <p>Description how magical this product is and yada yada...</p>
-                <button>Buy now</button>
+                <a class="button" href="html/products.html">Buy now</a>
             </div>
             <div class="product-item">
                 <img src="img/img4.jpg" alt="chair">
@@ -56,7 +57,7 @@
                     <p>0 EUR</p>
                 </div>
                 <p>Description how magical this product is and yada yada...</p>
-                <button>Buy now</button>
+                <a class="button" href="html/products.html">Buy now</a>
             </div>
             <div class="product-item">
                 <img src="img/img4.jpg" alt="chair">
@@ -65,18 +66,13 @@
                     <p>0 EUR</p>
                 </div>
                 <p>Description how magical this product is and yada yada...</p>
-                <button>Buy now</button>
+                <a class="button" href="html/products.html">Buy now</a>
             </div>
         </section>
     </main>
     <footer>
         &copy; Aleksandra C. 22 gr. PHP
     </footer>
-    <script>
-        function changeDisplay() {
-            let changeDisplay = document.getElementById('menu');
-            changeDisplay.style.display='block';
-        }
-    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
